@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
 @RestController
-@RequestMapping("/hello/api/v1")
-public class HelloWorldController {
+@RequestMapping("/tech/api/v1")
+public class TechWorldController {
 
-
-    @GetMapping("/greetings/v3")
-    public Flux<String> listGreetingsAnother() {
-        return Flux.just("Good morning", "Welcome", "Beautiful evening!");
+    @GetMapping("/list/frameworks")
+    public Flux<String> listFramworks(){
+        return Flux.just("Java",
+                "Spring boot",
+                "Weblux");
     }
-
 }
