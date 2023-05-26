@@ -8,7 +8,7 @@ import reactor.core.publisher.Flux;
 import java.util.List;
 
 @RestController
-@RequestMapping("/demo-v2/api/v1")
+@RequestMapping("/beautiful/world/api/v1")
 public class BeautifulWorldController {
 
     @GetMapping("/places")

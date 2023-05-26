@@ -9,19 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
 @RestController
-@RequestMapping("/demo/api/v1")
+@RequestMapping("/hello/api/v1")
 public class HelloWorldController {
 
-    @GetMapping("/numbers")
-    public Flux<Integer> listNumbers() {
-        return Flux.just(1,2,3,4);
-    }
 
-    @GetMapping("/greetings")
-    public Flux<String> listGreetings() {
-        return Flux.just("Good morning",
-                "Welcome",
-                "Beautiful evening!");
+    @GetMapping("/greetings/v3")
+    public Flux<String> listGreetingsAnother() {
+        return Flux.just("Good morning", "Welcome", "Beautiful evening!");
     }
 
     @GetMapping("/greetings/v2")
