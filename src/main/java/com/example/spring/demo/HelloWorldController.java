@@ -24,6 +24,7 @@ public class HelloWorldController {
                 "Beautiful evening!");
     }
 
+    @GetMapping("/greetings/v2")
     public Flux<Greeting> greetingFlux() {
         Greeting greeting1 = new Greeting("Mike", "I hope you're having a great week");
         Greeting greeting2 = new Greeting("Jacob", "I'm reaching out because");
