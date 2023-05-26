@@ -13,10 +13,23 @@ public class BeautifulWorldController {
 
     @GetMapping("/places")
     public Flux<String> beautifulPlaces() {
+
         List<String> list = List.of("Zhangye Danxia Geopark, China",
                 "Venice, Italy",
                 "Banff National Park, Canada",
-                "Great Ocean Road, Australia");
+                "Great Ocean Road, Australia",
+                "Machu Picchu",
+                "Pamukkale, Turkey",
+                "Japan in Cherry Blossom Season",
+                "Marrakesh, Morocco"
+        );
+
+        list.add("Bora Bora, French Polynesia");
+        list.add("Oia, Santorini, Greece");
+        list.add("Mù Cang Chải, Vietnam");
+        list.add("Tamil Nadu, India");
+
+
         return Flux.fromIterable(list);
     }
 }
