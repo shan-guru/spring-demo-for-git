@@ -15,8 +15,8 @@ public class HelloWorldController {
     }
 
     @GetMapping("/greetings")
-    public Flux<Integer> listGreetings() {
-        return Flux.just(1,2,3,4);
+    public Flux<String> listGreetings() {
+        return Flux.just("Good morning", "Welcome", "Beautiful evening!");
     }
 
 }
